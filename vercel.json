@@ -1,0 +1,16 @@
+{
+"rewrites": [
+{
+"source": "/built",
+"destination": "/built/index.html"
+},
+{
+"source": "/essence", 
+"destination": "/essence/index.html"
+},
+{
+"source": "/grace",
+"destination": "/grace/index.html"
+}
+]
+}
