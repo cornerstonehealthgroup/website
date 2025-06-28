@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Built - Men's Health & Wellness App | Cornerstone Health</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+line-height: 1.6;
+color: #1a1a1a;
+overflow-x: hidden;
+}
+
+/* Header */
+.header {
+position: fixed;
+top: 0;
+width: 100%;
+background: rgba(31, 41, 55, 0.95);
+backdrop-filter: blur(20px);
+z-index: 1000;
+padding: 1rem 0;
+transition: all 0.3s ease;
+}
+
+.nav-container {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 2rem;
+}
+
+.logo {
+font-size: 1.8rem;
+font-weight: 700;
+color: #f59e0b;
+text-decoration: none;
+}
+
+.nav-menu {
+display: flex;
+list-style: none;
+gap: 2rem;
+}
+
+.nav-menu a {
+text-decoration: none;
+color: #d1d5db;
+font-weight: 500;
+transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+color: #f59e0b;
+}
+
+.download-button {
+background: linear-gradient(135deg, #f59e0b, #d97706);
+color: white;
+padding: 0.75rem 1.5rem;
+border-radius: 50px;
+text-decoration: none;
+font-weight: 600;
+transition: all 0.3s ease;
+box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+}
+
+.download-button:hover {
+transform: translateY(-2px);
+box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
+}
+
+/* Hero Section */
+.hero {
+min-height: 100vh;
+display: flex;
+align-items: center;
+background: linear-gradient(135deg, #111827 0%, #1f2937 50%, #374151 100%);
+color: white;
+position: relative;
+overflow: hidden;
+}
+
+.hero::before {
+content: '';
+position: absolute;
+top: 0;
+right: 0;
+width: 60%;
+height: 100%;
+background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23374151" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+opacity: 0.3;
+}
+
+.hero-container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 2rem;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 4rem;
+align-items: center;
+position: relative;
+z-index: 2;
+}
+
+.hero-content h1 {
+font-size: 4rem;
+font-weight: 900;
+line-height: 1.1;
+margin-bottom: 1.5rem;
+background: linear-gradient(135deg, #f59e0b, #fbbf24);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+.hero-tagline {
+font-size: 1.5rem;
+color: #f59e0b;
+font-weight: 600;
+margin-bottom: 1rem;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+
+.hero-description {
+font-size: 1.3rem;
+color: #d1d5db;
+margin-bottom: 2.5rem;
+line-height: 1.6;
+}
+
+.hero-stats {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+margin-bottom: 2.5rem;
+}
+
+.stat-item {
+text-align: center;
+}
+
+.stat-number {
+font-size: 2.5rem;
+font-weight: 800;
+color: #f59e0b;
+display: block;
+}
+
+.stat-label {
+font-size: 0.9rem;
+color: #9ca3af;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+.hero-buttons {
+display: flex;
+gap: 1rem;
+flex-wrap: wrap;
+}
+
+.primary-button {
+background: linear-gradient(135deg, #f59e0b, #d97706);
+color: white;
+padding: 1.2rem 2.5rem;
+border-radius: 50px;
+text-decoration: none;
+font-weight: 600;
+font-size: 1.1rem;
+transition: all 0.3s ease;
+box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+}
+
+.primary-button:hover {
+transform: translateY(-3px);
+box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
+}
+
+.secondary-button {
+background: transparent;
+color: #f59e0b;
+padding: 1.2rem 2.5rem;
+border: 2px solid #f59e0b;
+border-radius: 50px;
+text-decoration: none;
+font-weight: 600;
+font-size: 1.1rem;
+transition: all 0.3s ease;
+}
+
+.secondary-button:hover {
+background: #f59e0b;
+color: #111827;
+transform: translateY(-3px);
+}
+
+.hero-visual {
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+
+.phone-mockup {
+width: 320px;
+height: 640px;
+background: linear-gradient(135deg, #000000, #1f2937);
+border-radius: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+position: relative;
+overflow: hidden;
+}
+
+.phone-screen {
+width: 280px;
+height: 600px;
+background: linear-gradient(135deg, #111827, #1f2937);
+border-radius: 30px;
+padding: 2rem;
+color: white;
+position: relative;
+}
+
+.app-header {
+display: flex;
+justify-content: between;
+align-items: center;
+margin-bottom: 2rem;
+}
+
+.app-logo {
+font-size: 1.8rem;
+font-weight: 900;
+color: #f59e0b;
+}
+
+.workout-card {
+background: rgba(245, 158, 11, 0.1);
+border: 1px solid rgba(245, 158, 11, 0.3);
+border-radius: 15px;
+padding: 1.5rem;
+margin-bottom: 1rem;
+}
+
+.workout-title {
+font-size: 1.1rem;
+font-weight: 700;
+margin-bottom: 0.5rem;
+color: #f59e0b;
+}
+
+.workout-stats {
+display: flex;
+gap: 1rem;
+font-size: 0.9rem;
+color: #9ca3af;
+}
+
+/* Features Section */
+.features-section {
+padding: 6rem 0;
+background: #f9fafb;
+}
+
+.section-container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 2rem;
+}
+
+.section-header {
+text-align: center;
+margin-bottom: 4rem;
+}
+
+.section-title {
+font-size: 3rem;
+font-weight: 800;
+margin-bottom: 1rem;
+color: #111827;
+}
+
+.section-subtitle {
+font-size: 1.3rem;
+color: #6b7280;
+max-width: 600px;
+margin: 0 auto;
+}
+
+.features-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 3rem;
+margin-top: 3rem;
+}
+
+.feature-card {
+background: white;
+border-radius: 20px;
+padding: 2.5rem;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease;
+border-left: 4px solid #f59e0b;
+}
+
+.feature-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+width: 60px;
+height: 60px;
+background: linear-gradient(135deg, #f59e0b, #d97706);
+border-radius: 15px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.5rem;
+margin-bottom: 1.5rem;
+}
+
+.feature-card h3 {
+font-size: 1.5rem;
+font-weight: 700;
+margin-bottom: 1rem;
+color: #111827;
+}
+
+.feature-card p {
+color: #6b7280;
+line-height: 1.6;
+}
+
+/* How It Works Section */
+.how-it-works {
+padding: 6rem 0;
+background: #111827;
+color: white;
+}
+
+.steps-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 3rem;
+margin-top: 3rem;
+}
+
+.step-card {
+text-align: center;
+position: relative;
+}
+
+.step-number {
+width: 80px;
+height: 80px;
+background: linear-gradient(135deg, #f59e0b, #d97706);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 2rem;
+font-weight: 900;
+margin: 0 auto 1.5rem;
+}
+
+.step-card h3 {
+font-size: 1.3rem;
+font-weight: 700;
+margin-bottom: 1rem;
+color: #f59e0b;
+}
+
+.step-card p {
+color: #d1d5db;
+line-height: 1.6;
+}
+
+/* Testimonials Section */
+.testimonials {
+padding: 6rem 0;
+background: white;
+}
+
+.testimonials-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+gap: 3rem;
+margin-top: 3rem;
+}
+
+.testimonial-card {
+background: #f9fafb;
+border-radius: 20px;
+padding: 2.5rem;
+position: relative;
+}
+
+.testimonial-card::before {
+content: '"';
+font-size: 4rem;
+color: #f59e0b;
+position: absolute;
+top: 1rem;
+left: 2rem;
+font-weight: 900;
+}
+
+.testimonial-text {
+font-size: 1.1rem;
+color: #374151;
+margin-bottom: 1.5rem;
+font-style: italic;
+margin-top: 1rem;
+}
+
+.testimonial-author {
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+
+.author-avatar {
+width: 50px;
+height: 50px;
+background: linear-gradient(135deg, #f59e0b, #d97706);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+font-weight: 700;
+}
+
+.author-info h4 {
+font-weight: 700;
+color: #111827;
+}
+
+.author-info p {
+color: #6b7280;
+font-size: 0.9rem;
+}
+
+/* CTA Section */
+.cta-section {
+padding: 6rem 0;
+background: linear-gradient(135deg, #111827, #1f2937);
+color: white;
+text-align: center;
+}
+
+.cta-content h2 {
+font-size: 3rem;
+font-weight: 800;
+margin-bottom: 1rem;
+color: #f59e0b;
+}
+
+.cta-content p {
+font-size: 1.3rem;
+color: #d1d5db;
+margin-bottom: 2.5rem;
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.app-badges {
+display: flex;
+justify-content: center;
+gap: 1rem;
+margin-top: 2rem;
+}
+
+.app-badge {
+background: #374151;
+border-radius: 15px;
+padding: 1rem 2rem;
+text-decoration: none;
+color: white;
+font-weight: 600;
+transition: all 0.3s ease;
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+
+.app-badge:hover {
+background: #4b5563;
+transform: translateY(-3px);
+}
+
+/* Footer */
+.footer {
+background: #0f172a;
+color: white;
+padding: 3rem 0 1rem;
+}
+
+.footer-content {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 2rem;
+text-align: center;
+}
+
+.footer-links {
+display: flex;
+justify-content: center;
+gap: 2rem;
+margin-bottom: 2rem;
+flex-wrap: wrap;
+}
+
+.footer-links a {
+color: #94a3b8;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+color: #f59e0b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.nav-menu {
+display: none;
+}
+
+.hero-container {
+grid-template-columns: 1fr;
+text-align: center;
+gap: 2rem;
+}
+
+.hero-content h1 {
+font-size: 2.5rem;
+}
+
+.hero-stats {
+grid-template-columns: repeat(3, 1fr);
+gap: 1rem;
+}
+
+.features-grid, .testimonials-grid {
+grid-template-columns: 1fr;
+}
+
+.steps-container {
+grid-template-columns: 1fr;
+}
+
+.app-badges {
+flex-direction: column;
+align-items: center;
+}
+}
+
+/* Animations */
+@keyframes fadeInUp {
+from {
+opacity: 0;
+transform: translateY(30px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.hero-content > * {
+animation: fadeInUp 0.8s ease forwards;
+}
+</style>
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+<nav class="nav-container">
+<a href="#" class="logo">Built</a>
+<ul class="nav-menu">
+<li><a href="#features">Features</a></li>
+<li><a href="#how-it-works">How It Works</a></li>
+<li><a href="#testimonials">Reviews</a></li>
+<li><a href="#download">Download</a></li>
+</ul>
+<a href="#download" class="download-button">Download Now</a>
+</nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+<div class="hero-container">
+<div class="hero-content">
+<div class="hero-tagline">Built for Men</div>
+<h1>Build Your<br>Best Self</h1>
+<p class="hero-description">The men's health app that gets it. Track strength, nutrition, and progress with tools designed for how you actually train and live.</p>
+
+<div class="hero-stats">
+<div class="stat-item">
+<span class="stat-number">10K+</span>
+<span class="stat-label">Active Users</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">4.8★</span>
+<span class="stat-label">App Rating</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">85%</span>
+<span class="stat-label">Goal Achievement</span>
+</div>
+</div>
+
+<div class="hero-buttons">
+<a href="#download" class="primary-button">Start Building</a>
+<a href="#features" class="secondary-button">See Features</a>
+</div>
+</div>
+<div class="hero-visual">
+<div class="phone-mockup">
+<div class="phone-screen">
+<div class="app-header">
+<div class="app-logo">Built</div>
+</div>
+<div class="workout-card">
+<div class="workout-title">Push Day - Chest Focus</div>
+<div class="workout-stats">
+<span>45 min</span>
+<span>•</span>
+<span>8 exercises</span>
+<span>•</span>
+<span>Advanced</span>
+</div>
+</div>
+<div class="workout-card">
+<div class="workout-title">Deadlift PR Training</div>
+<div class="workout-stats">
+<span>35 min</span>
+<span>•</span>
+<span>5 exercises</span>
+<span>•</span>
+<span>Strength</span>
+</div>
+</div>
+<div class="workout-card">
+<div class="workout-title">Upper Body Power</div>
+<div class="workout-stats">
+<span>50 min</span>
+<span>•</span>
+<span>10 exercises</span>
+<span>•</span>
+<span>Power</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section" id="features">
+<div class="section-container">
+<div class="section-header">
+<h2 class="section-title">Built Different</h2>
+<p class="section-subtitle">Every feature designed with men's fitness goals in mind. No fluff, just tools that work.</p>
+</div>
+
+<div class="features-grid">
+<div class="feature-card">
+<div class="feature-icon">💪</div>
+<h3>Strength-First Training</h3>
+<p>Progressive overload tracking, PR celebrations, and strength-focused workout programs that actually build muscle and power.</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">🍖</div>
+<h3>Macro-Based Nutrition</h3>
+<p>Simple protein, carb, and fat tracking designed for men's metabolism and muscle-building goals. No calorie counting obsession.</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">📊</div>
+<h3>Performance Analytics</h3>
+<p>Track strength gains, body composition changes, and performance metrics that matter. See your progress in numbers that count.</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">⌚</div>
+<h3>Wearable Integration</h3>
+<p>Seamlessly connect with Apple Watch, Garmin, and Fitbit. Automatic workout detection and heart rate monitoring.</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">🎯</div>
+<h3>Goal-Driven Programs</h3>
+<p>Whether you're cutting, bulking, or maintaining, get personalized programs that adapt to your specific goals and schedule.</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">🔥</div>
+<h3>Competitive Challenges</h3>
+<p>Join challenges with other men, compete on leaderboards, and stay motivated with built-in accountability features.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- How It Works Section -->
+<section class="how-it-works" id="how-it-works">
+<div class="section-container">
+<div class="section-header">
+<h2 class="section-title">How Built Works</h2>
+<p class="section-subtitle">Three simple steps to start building your best self</p>
+</div>
+
+<div class="steps-container">
+<div class="step-card">
+<div class="step-number">1</div>
+<h3>Set Your Goals</h3>
+<p>Tell us your fitness goals, current stats, and training experience. We'll create a personalized plan that fits your lifestyle.</p>
+</div>
+
+<div class="step-card">
+<div class="step-number">2</div>
+<h3>Train & Track</h3>
+<p>Follow your custom workouts, log your progress, and track your nutrition. Built adapts as you get stronger.</p>
+</div>
+
+<div class="step-card">
+<div class="step-number">3</div>
+<h3>See Results</h3>
+<p>Monitor your strength gains, body composition changes, and performance improvements with detailed analytics.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials" id="testimonials">
+<div class="section-container">
+<div class="section-header">
+<h2 class="section-title">Built by Men, For Men</h2>
+<p class="section-subtitle">See what men are saying about their Built experience</p>
+</div>
+
+<div class="testimonials-grid">
+<div class="testimonial-card">
+<p class="testimonial-text">Finally, an app that understands how men train. The strength tracking is spot-on, and I've hit more PRs in 3 months than I did all last year.</p>
+<div class="testimonial-author">
+<div class="author-avatar">MJ</div>
+<div class="author-info">
+<h4>Mike Johnson</h4>
+<p>Personal Trainer, Chicago</p>
+</div>
+</div>
+</div>
+
+<div class="testimonial-card">
+<p class="testimonial-text">The nutrition tracking actually makes sense. No more obsessing over every calorie - just simple macros that support my training goals.</p>
+<div class="testimonial-author">
+<div class="author-avatar">DT</div>
+<div class="author-info">
+<h4>David Torres</h4>
+<p>Software Engineer, Austin</p>
+</div>
+</div>
+</div>
+
+<div class="testimonial-card">
+<p class="testimonial-text">Lost 25 pounds while gaining strength. Built's approach to men's fitness is exactly what I needed. No fluff, just results.</p>
+<div class="testimonial-author">
+<div class="author-avatar">RC</div>
+<div class="author-info">
+<h4>Ryan Chen</h4>
+<p>Marketing Director, SF</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section" id="download">
+<div class="section-container">
+<div class="cta-content">
+<h2>Ready to Build?</h2>
+<p>Join thousands of men who are already building their best selves with Built. Download now and start your transformation.</p>
+<a href="#" class="primary-button">Download Built</a>
+
+<div class="app-badges">
+<a href="#" class="app-badge">
+<span>📱</span>
+<span>Download on App Store</span>
+</a>
+<a href="#" class="app-badge">
+<span>🤖</span>
+<span>Get it on Google Play</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+<div class="footer-content">
+<div class="footer-links">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+<a href="#">Support</a>
+<a href="#">About Cornerstone Health</a>
+</div>
+<p>&copy; 2025 Cornerstone Health. Built with purpose.</p>
+</div>
+</footer>
+
+<script>
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+const target = document.querySelector(this.getAttribute('href'));
+if (target) {
+target.scrollIntoView({
+behavior: 'smooth',
+block: 'start'
+});
+}
+});
+});
+
+// Header scroll effect
+window.addEventListener('scroll', () => {
+const header = document.querySelector('.header');
+if (window.scrollY > 100) {
+header.style.background = 'rgba(31, 41, 55, 0.98)';
+header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.3)';
+} else {
+header.style.background = 'rgba(31, 41, 55, 0.95)';
+header.style.boxShadow = 'none';
+}
+});
+
+// Feature card hover effects
+document.querySelectorAll('.feature-card').forEach(card => {
+card.addEventListener('mouseenter', function() {
+this.style.transform = 'translateY(-10px) scale(1.02)';
+});
+
+card.addEventListener('mouseleave', function() {
+this.style.transform = 'translateY(0) scale(1)';
+});
+});
+</script>
+</body>
+</html>
