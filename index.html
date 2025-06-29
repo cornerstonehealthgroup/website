@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cornerstone Health - Digital Health, Built Right</title>
+<title>Cornerstone - Digital Health, Built Right | Coming 2025</title>
+<meta name="description" content="Revolutionary health apps launching 2025. Built for men, Essence for women, Grace for seniors. Join our waitlist for early access.">
 <style>
 * {
 margin: 0;
@@ -44,6 +45,7 @@ font-size: 1.8rem;
 font-weight: 700;
 color: #2563eb;
 text-decoration: none;
+white-space: nowrap;
 }
 
 .nav-menu {
@@ -63,18 +65,20 @@ transition: color 0.3s ease;
 color: #2563eb;
 }
 
-.cta-button {
+.notify-button {
 background: linear-gradient(135deg, #2563eb, #1d4ed8);
 color: white;
-padding: 0.75rem 1.5rem;
+padding: 0.75rem 1.2rem;
 border-radius: 50px;
 text-decoration: none;
 font-weight: 600;
 transition: all 0.3s ease;
 box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+white-space: nowrap;
+font-size: 0.9rem;
 }
 
-.cta-button:hover {
+.notify-button:hover {
 transform: translateY(-2px);
 box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
 }
@@ -87,6 +91,7 @@ align-items: center;
 background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
 position: relative;
 overflow: hidden;
+padding-top: 80px;
 }
 
 .hero::before {
@@ -113,10 +118,27 @@ position: relative;
 z-index: 2;
 }
 
+.launch-badge {
+display: inline-block;
+background: linear-gradient(135deg, #f59e0b, #d97706);
+color: white;
+padding: 0.5rem 1rem;
+border-radius: 25px;
+font-size: 0.9rem;
+font-weight: 600;
+margin-bottom: 1rem;
+animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+0%, 100% { transform: scale(1); }
+50% { transform: scale(1.05); }
+}
+
 .hero-content h1 {
-font-size: 3.5rem;
-font-weight: 800;
-line-height: 1.2;
+font-size: 4rem;
+font-weight: 900;
+line-height: 1.1;
 margin-bottom: 1.5rem;
 background: linear-gradient(135deg, #1e293b, #2563eb);
 -webkit-background-clip: text;
@@ -132,51 +154,84 @@ margin-bottom: 1rem;
 }
 
 .hero-description {
-font-size: 1.2rem;
+font-size: 1.3rem;
 color: #64748b;
 margin-bottom: 2rem;
 line-height: 1.6;
 }
 
-.hero-buttons {
+.waitlist-stats {
 display: flex;
-gap: 1rem;
-flex-wrap: wrap;
+gap: 2rem;
+margin-bottom: 2.5rem;
+align-items: center;
 }
 
-.primary-button {
+.stat-item {
+text-align: center;
+}
+
+.stat-number {
+font-size: 2rem;
+font-weight: 800;
+color: #2563eb;
+display: block;
+}
+
+.stat-label {
+font-size: 0.9rem;
+color: #6b7280;
+}
+
+.waitlist-form {
+background: white;
+padding: 1.5rem;
+border-radius: 15px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+margin-bottom: 1rem;
+}
+
+.form-group {
+display: flex;
+gap: 0.5rem;
+}
+
+.email-input {
+flex: 1;
+padding: 1rem;
+border: 2px solid #e5e7eb;
+border-radius: 10px;
+font-size: 1rem;
+transition: border-color 0.3s ease;
+}
+
+.email-input:focus {
+outline: none;
+border-color: #2563eb;
+}
+
+.join-button {
 background: linear-gradient(135deg, #2563eb, #1d4ed8);
 color: white;
+border: none;
 padding: 1rem 2rem;
-border-radius: 50px;
-text-decoration: none;
+border-radius: 10px;
 font-weight: 600;
-font-size: 1.1rem;
+font-size: 1rem;
+cursor: pointer;
 transition: all 0.3s ease;
-box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+white-space: nowrap;
 }
 
-.primary-button:hover {
-transform: translateY(-3px);
+.join-button:hover {
+transform: translateY(-2px);
 box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
 }
 
-.secondary-button {
-background: transparent;
-color: #2563eb;
-padding: 1rem 2rem;
-border: 2px solid #2563eb;
-border-radius: 50px;
-text-decoration: none;
-font-weight: 600;
-font-size: 1.1rem;
-transition: all 0.3s ease;
-}
-
-.secondary-button:hover {
-background: #2563eb;
-color: white;
-transform: translateY(-3px);
+.privacy-note {
+font-size: 0.85rem;
+color: #6b7280;
+text-align: center;
 }
 
 .hero-visual {
@@ -186,65 +241,66 @@ align-items: center;
 position: relative;
 }
 
-.phone-mockup {
-width: 300px;
-height: 600px;
-background: linear-gradient(135deg, #1e293b, #334155);
-border-radius: 40px;
-display: flex;
-align-items: center;
-justify-content: center;
-box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
-position: relative;
-overflow: hidden;
-}
-
-.phone-screen {
-width: 260px;
-height: 560px;
-background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+.coming-soon-visual {
+text-align: center;
+background: white;
+padding: 3rem;
 border-radius: 30px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-position: relative;
+box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
 }
 
-.app-icons {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 1rem;
+.launch-timeline {
+font-size: 2.5rem;
+font-weight: 800;
+color: #2563eb;
+margin-bottom: 1rem;
+}
+
+.timeline-label {
+font-size: 1.2rem;
+color: #6b7280;
 margin-bottom: 2rem;
 }
 
-.app-icon {
-width: 60px;
-height: 60px;
+.app-preview-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1rem;
+}
+
+.app-preview {
+padding: 1rem;
 border-radius: 15px;
-display: flex;
-align-items: center;
-justify-content: center;
-color: white;
-font-weight: bold;
-font-size: 1.2rem;
-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+text-align: center;
 }
 
-.built-icon {
-background: linear-gradient(135deg, #1f2937, #374151);
+.app-preview.built {
+background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+color: #374151;
 }
 
-.essence-icon {
-background: linear-gradient(135deg, #ec4899, #be185d);
+.app-preview.essence {
+background: linear-gradient(135deg, #fdf2f8, #fce7f3);
+color: #ec4899;
 }
 
-.grace-icon {
-background: linear-gradient(135deg, #059669, #047857);
+.app-preview.grace {
+background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+color: #059669;
 }
 
-/* Apps Section */
-.apps-section {
+.app-preview h4 {
+font-weight: 700;
+margin-bottom: 0.5rem;
+}
+
+.app-preview p {
+font-size: 0.8rem;
+opacity: 0.8;
+}
+
+/* Apps Preview Section */
+.apps-preview {
 padding: 6rem 0;
 background: white;
 }
@@ -261,15 +317,15 @@ margin-bottom: 4rem;
 }
 
 .section-title {
-font-size: 2.5rem;
-font-weight: 700;
+font-size: 3rem;
+font-weight: 800;
 margin-bottom: 1rem;
-color: #1e293b;
+color: #111827;
 }
 
 .section-subtitle {
-font-size: 1.2rem;
-color: #64748b;
+font-size: 1.3rem;
+color: #6b7280;
 max-width: 600px;
 margin: 0 auto;
 }
@@ -288,11 +344,25 @@ padding: 2.5rem;
 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 transition: all 0.3s ease;
 border: 1px solid #f1f5f9;
+position: relative;
+overflow: hidden;
 }
 
 .app-card:hover {
 transform: translateY(-10px);
 box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.coming-soon-tag {
+position: absolute;
+top: 1rem;
+right: 1rem;
+background: linear-gradient(135deg, #f59e0b, #d97706);
+color: white;
+padding: 0.3rem 0.8rem;
+border-radius: 15px;
+font-size: 0.75rem;
+font-weight: 600;
 }
 
 .app-card-icon {
@@ -306,6 +376,18 @@ font-size: 2rem;
 font-weight: bold;
 color: white;
 margin-bottom: 1.5rem;
+}
+
+.built-icon {
+background: linear-gradient(135deg, #1f2937, #374151);
+}
+
+.essence-icon {
+background: linear-gradient(135deg, #ec4899, #be185d);
+}
+
+.grace-icon {
+background: linear-gradient(135deg, #059669, #047857);
 }
 
 .app-card h3 {
@@ -340,30 +422,29 @@ font-weight: bold;
 margin-right: 0.5rem;
 }
 
-.learn-more {
+.notify-me {
 color: #2563eb;
 text-decoration: none;
 font-weight: 600;
 display: inline-flex;
 align-items: center;
+padding: 0.75rem 1.5rem;
+border: 2px solid #2563eb;
+border-radius: 10px;
 transition: all 0.3s ease;
 }
 
-.learn-more:hover {
-gap: 0.5rem;
+.notify-me:hover {
+background: #2563eb;
+color: white;
+transform: translateY(-2px);
 }
 
-.learn-more:after {
-content: '→';
-margin-left: 0.25rem;
-transition: margin-left 0.3s ease;
-}
-
-/* Stats Section */
-.stats-section {
+/* Why We're Building Section */
+.why-building {
+padding: 6rem 0;
 background: linear-gradient(135deg, #1e293b, #334155);
 color: white;
-padding: 4rem 0;
 }
 
 .stats-grid {
@@ -371,18 +452,123 @@ display: grid;
 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 gap: 3rem;
 text-align: center;
+margin-top: 3rem;
 }
 
-.stat-item h3 {
-font-size: 3rem;
+.stat-card {
+background: rgba(255, 255, 255, 0.1);
+padding: 2rem;
+border-radius: 15px;
+backdrop-filter: blur(10px);
+}
+
+.stat-card h3 {
+font-size: 2.5rem;
 font-weight: 800;
 margin-bottom: 0.5rem;
 color: #60a5fa;
 }
 
-.stat-item p {
-font-size: 1.1rem;
+.stat-card p {
 opacity: 0.9;
+}
+
+/* Timeline Section */
+.timeline-section {
+padding: 6rem 0;
+background: #f9fafb;
+}
+
+.timeline {
+max-width: 800px;
+margin: 3rem auto 0;
+}
+
+.timeline-item {
+display: flex;
+gap: 2rem;
+margin-bottom: 3rem;
+align-items: center;
+}
+
+.timeline-date {
+background: linear-gradient(135deg, #2563eb, #1d4ed8);
+color: white;
+padding: 1rem;
+border-radius: 15px;
+font-weight: 700;
+text-align: center;
+min-width: 120px;
+}
+
+.timeline-content {
+flex: 1;
+background: white;
+padding: 2rem;
+border-radius: 15px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h4 {
+font-size: 1.3rem;
+font-weight: 700;
+margin-bottom: 0.5rem;
+color: #1e293b;
+}
+
+.timeline-content p {
+color: #6b7280;
+}
+
+/* Final CTA Section */
+.final-cta {
+padding: 6rem 0;
+background: linear-gradient(135deg, #2563eb, #1d4ed8);
+color: white;
+text-align: center;
+}
+
+.cta-content h2 {
+font-size: 3rem;
+font-weight: 800;
+margin-bottom: 1rem;
+}
+
+.cta-content p {
+font-size: 1.3rem;
+margin-bottom: 2.5rem;
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+opacity: 0.95;
+}
+
+.cta-form {
+max-width: 500px;
+margin: 0 auto;
+background: rgba(255, 255, 255, 0.1);
+padding: 2rem;
+border-radius: 20px;
+backdrop-filter: blur(10px);
+}
+
+.cta-form .form-group {
+margin-bottom: 1rem;
+}
+
+.cta-form .email-input {
+background: rgba(255, 255, 255, 0.9);
+border: none;
+}
+
+.cta-form .join-button {
+background: white;
+color: #2563eb;
+width: 100%;
+}
+
+.cta-form .join-button:hover {
+background: #f8fafc;
 }
 
 /* Footer */
@@ -438,8 +624,25 @@ opacity: 0.6;
 
 /* Responsive Design */
 @media (max-width: 768px) {
+.nav-container {
+padding: 0 1rem;
+}
+
 .nav-menu {
 display: none;
+}
+
+.logo {
+font-size: 1.5rem;
+}
+
+.notify-button {
+padding: 0.6rem 1rem;
+font-size: 0.85rem;
+}
+
+.hero {
+padding-top: 100px;
 }
 
 .hero-container {
@@ -452,12 +655,22 @@ gap: 2rem;
 font-size: 2.5rem;
 }
 
-.hero-tagline {
-font-size: 1.2rem;
+.waitlist-stats {
+justify-content: center;
+gap: 1rem;
 }
 
-.hero-description {
-font-size: 1rem;
+.form-group {
+flex-direction: column;
+}
+
+.join-button {
+width: 100%;
+}
+
+.app-preview-grid {
+grid-template-columns: 1fr;
+gap: 0.5rem;
 }
 
 .apps-grid {
@@ -466,6 +679,11 @@ grid-template-columns: 1fr;
 
 .stats-grid {
 grid-template-columns: repeat(2, 1fr);
+}
+
+.timeline-item {
+flex-direction: column;
+text-align: center;
 }
 
 .footer-links {
@@ -490,20 +708,24 @@ transform: translateY(0);
 animation: fadeInUp 0.8s ease forwards;
 }
 
+.hero-content .launch-badge {
+animation-delay: 0.1s;
+}
+
 .hero-content h1 {
-animation-delay: 0.2s;
+animation-delay: 0.3s;
 }
 
 .hero-tagline {
-animation-delay: 0.4s;
+animation-delay: 0.5s;
 }
 
 .hero-description {
-animation-delay: 0.6s;
+animation-delay: 0.7s;
 }
 
-.hero-buttons {
-animation-delay: 0.8s;
+.waitlist-form {
+animation-delay: 0.9s;
 }
 </style>
 </head>
@@ -511,13 +733,13 @@ animation-delay: 0.8s;
 <!-- Header -->
 <header class="header">
 <nav class="nav-container">
-<a href="#" class="logo">Cornerstone Health</a>
+<a href="#" class="logo">Cornerstone</a>
 <ul class="nav-menu">
 <li><a href="#apps">Our Apps</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#contact">Contact</a></li>
+<li><a href="#timeline">Timeline</a></li>
+<li><a href="#why">Why</a></li>
 </ul>
-<a href="#" class="cta-button">Get Started</a>
+<a href="#waitlist" class="notify-button">Get Notified</a>
 </nav>
 </header>
 
@@ -525,25 +747,50 @@ animation-delay: 0.8s;
 <section class="hero">
 <div class="hero-container">
 <div class="hero-content">
+<div class="launch-badge">🚀 Launching Q2 2025</div>
 <div class="hero-tagline">Digital health, built right.</div>
-<h1>Your Health Journey<br>Starts Here</h1>
-<p class="hero-description">Premium wellness apps designed for every stage of life. From strength to grace, we build digital health solutions that grow with you and your family.</p>
-<div class="hero-buttons">
-<a href="#apps" class="primary-button">Explore Our Apps</a>
-<a href="#" class="secondary-button">Watch Demo</a>
+<h1>Health Apps<br>Worth Waiting For</h1>
+<p class="hero-description">Three revolutionary wellness apps designed for every stage of life. Built for men, Essence for women, Grace for seniors.</p>
+
+<div class="waitlist-stats">
+<div class="stat-item">
+<span class="stat-number">1,247</span>
+<span class="stat-label">On Waitlist</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">3</span>
+<span class="stat-label">Apps Coming</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">0</span>
+<span class="stat-label">Compromises</span>
+</div>
+</div>
+
+<div class="waitlist-form" id="waitlist">
+<div class="form-group">
+<input type="email" class="email-input" placeholder="Enter your email for early access" required>
+<button type="submit" class="join-button">Join Waitlist</button>
+</div>
+<p class="privacy-note">🔒 No spam. Unsubscribe anytime. Early access guaranteed.</p>
 </div>
 </div>
 <div class="hero-visual">
-<div class="phone-mockup">
-<div class="phone-screen">
-<div class="app-icons">
-<div class="app-icon built-icon">Built</div>
-<div class="app-icon essence-icon">Essence</div>
-<div class="app-icon grace-icon">Grace</div>
+<div class="coming-soon-visual">
+<div class="launch-timeline">Q2 2025</div>
+<div class="timeline-label">Launch Timeline</div>
+<div class="app-preview-grid">
+<div class="app-preview built">
+<h4>Built</h4>
+<p>Men's Health</p>
 </div>
-<div style="text-align: center; color: #64748b;">
-<h4 style="margin-bottom: 0.5rem;">Three Apps, One Vision</h4>
-<p style="font-size: 0.9rem;">Comprehensive health for every family member</p>
+<div class="app-preview essence">
+<h4>Essence</h4>
+<p>Women's Health</p>
+</div>
+<div class="app-preview grace">
+<h4>Grace</h4>
+<p>Senior Health</p>
 </div>
 </div>
 </div>
@@ -551,79 +798,149 @@ animation-delay: 0.8s;
 </div>
 </section>
 
-<!-- Apps Section -->
-<section class="apps-section" id="apps">
+<!-- Apps Preview Section -->
+<section class="apps-preview" id="apps">
 <div class="section-container">
 <div class="section-header">
-<h2 class="section-title">Meet Your Health Companions</h2>
-<p class="section-subtitle">Three specialized apps, each designed with precision for different life stages and health journeys. Built on cutting-edge technology, powered by your success.</p>
+<h2 class="section-title">Three Apps, One Vision</h2>
+<p class="section-subtitle">Specialized health solutions for different life stages, all built with the same obsessive attention to detail</p>
 </div>
 
 <div class="apps-grid">
 <!-- Built App -->
 <div class="app-card">
+<div class="coming-soon-tag">Coming Q2 2025</div>
 <div class="app-card-icon built-icon">Built</div>
 <h3>Built</h3>
-<p>Strength-focused wellness for men who build their health with intention. Track workouts, nutrition, and progress with tools designed for how men approach fitness.</p>
+<p>Strength-focused wellness for men who build their health with intention. No fluff, just tools that work.</p>
 <ul class="app-features">
-<li>Personalized strength training programs</li>
-<li>Advanced nutrition tracking</li>
-<li>Progress analytics & goal setting</li>
-<li>Wearable device integration</li>
+<li>Progressive strength tracking</li>
+<li>Macro-based nutrition</li>
+<li>Performance analytics</li>
+<li>Competitive challenges</li>
 </ul>
-<a href="#" class="learn-more">Learn More</a>
+<a href="#waitlist" class="notify-me">Notify Me</a>
 </div>
 
 <!-- Essence App -->
 <div class="app-card">
+<div class="coming-soon-tag">Coming Q3 2025</div>
 <div class="app-card-icon essence-icon">Essence</div>
 <h3>Essence</h3>
-<p>Core wellness designed for women's unique health journey. From hormonal balance to fitness goals, discover your essential path to vitality.</p>
+<p>Core wellness designed for women's unique health journey. Hormone-aware fitness and personalized insights.</p>
 <ul class="app-features">
-<li>Cycle & fertility tracking</li>
-<li>Hormone-aware fitness plans</li>
-<li>Stress & mood monitoring</li>
-<li>Women's health insights</li>
+<li>Intelligent cycle tracking</li>
+<li>Hormone-aware workouts</li>
+<li>Mood & stress insights</li>
+<li>Community support</li>
 </ul>
-<a href="#" class="learn-more">Learn More</a>
+<a href="#waitlist" class="notify-me">Notify Me</a>
 </div>
 
 <!-- Grace App -->
 <div class="app-card">
+<div class="coming-soon-tag">Coming Q4 2025</div>
 <div class="app-card-icon grace-icon">Grace</div>
 <h3>Grace</h3>
-<p>Elegant wellness for life's wisdom years. Health management that honors experience while embracing vitality at every age.</p>
+<p>Elegant wellness for life's wisdom years. Health management that honors experience while embracing vitality.</p>
 <ul class="app-features">
 <li>Medication management</li>
-<li>Fall prevention exercises</li>
+<li>Fall prevention programs</li>
 <li>Cognitive health activities</li>
-<li>Family connection features</li>
+<li>Family connections</li>
 </ul>
-<a href="#" class="learn-more">Learn More</a>
+<a href="#waitlist" class="notify-me">Notify Me</a>
 </div>
 </div>
 </div>
 </section>
 
-<!-- Stats Section -->
-<section class="stats-section">
+<!-- Why We're Building Section -->
+<section class="why-building" id="why">
 <div class="section-container">
+<div class="section-header">
+<h2 class="section-title">Why We're Building This</h2>
+<p class="section-subtitle">The health app market is broken. Generic solutions that try to serve everyone end up serving no one well.</p>
+</div>
+
 <div class="stats-grid">
-<div class="stat-item">
+<div class="stat-card">
 <h3>$26B</h3>
 <p>Wellness app market by 2030</p>
 </div>
-<div class="stat-item">
+<div class="stat-card">
 <h3>74%</h3>
 <p>Americans use fitness apps</p>
 </div>
-<div class="stat-item">
-<h3>15%</h3>
-<p>Annual market growth</p>
+<div class="stat-card">
+<h3>85%</h3>
+<p>Abandon apps within 3 months</p>
 </div>
-<div class="stat-item">
-<h3>100%</h3>
-<p>Privacy-first approach</p>
+<div class="stat-card">
+<h3>3</h3>
+<p>Apps built specifically for each demographic</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Timeline Section -->
+<section class="timeline-section" id="timeline">
+<div class="section-container">
+<div class="section-header">
+<h2 class="section-title">Our Roadmap</h2>
+<p class="section-subtitle">Transparent development timeline so you know exactly what to expect</p>
+</div>
+
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-date">Q1 2025</div>
+<div class="timeline-content">
+<h4>Foundation & Beta Testing</h4>
+<p>Core development, closed beta with select users, gathering feedback and refining features.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-date">Q2 2025</div>
+<div class="timeline-content">
+<h4>Built Launch</h4>
+<p>Men's health app launches on iOS and Android. Full feature set with strength tracking and nutrition.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-date">Q3 2025</div>
+<div class="timeline-content">
+<h4>Essence Launch</h4>
+<p>Women's health app with cycle tracking, hormone-aware fitness, and comprehensive wellness tools.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-date">Q4 2025</div>
+<div class="timeline-content">
+<h4>Grace Launch & Family Features</h4>
+<p>Senior health app plus cross-app family connectivity and shared health insights.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Final CTA Section -->
+<section class="final-cta">
+<div class="section-container">
+<div class="cta-content">
+<h2>Be Among the First</h2>
+<p>Join our waitlist for early access, exclusive updates, and the chance to shape the future of digital health.</p>
+
+<div class="cta-form">
+<div class="form-group">
+<input type="email" class="email-input" placeholder="Enter your email" required>
+</div>
+<button type="submit" class="join-button">Reserve My Spot</button>
+<p class="privacy-note">🎁 Early access + exclusive founder pricing</p>
 </div>
 </div>
 </div>
@@ -632,21 +949,21 @@ animation-delay: 0.8s;
 <!-- Footer -->
 <footer class="footer">
 <div class="footer-content">
-<div class="footer-logo">Cornerstone Health</div>
+<div class="footer-logo">Cornerstone</div>
 <div class="footer-tagline">Digital health, built right.</div>
 <div class="footer-links">
 <a href="#">Privacy Policy</a>
 <a href="#">Terms of Service</a>
-<a href="#">Support</a>
-<a href="#">Careers</a>
-<a href="#">Press</a>
+<a href="#">Contact</a>
+<a href="#">Updates</a>
 </div>
 <div class="footer-bottom">
-<p>&copy; 2025 Cornerstone Health. All rights reserved.</p>
+<p>&copy; 2025 Cornerstone. Building the future of health.</p>
 </div>
 </div>
 </footer>
 
+<script>
 <script>
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -674,6 +991,55 @@ header.style.boxShadow = 'none';
 }
 });
 
+// Waitlist form handling
+document.querySelectorAll('.join-button').forEach(button => {
+button.addEventListener('click', function(e) {
+e.preventDefault();
+const form = this.closest('.waitlist-form') || this.closest('.cta-form');
+const emailInput = form.querySelector('.email-input');
+const email = emailInput.value.trim();
+
+if (email && isValidEmail(email)) {
+// Replace with your actual email collection service
+// For now, just show success message
+this.textContent = 'Added to Waitlist! ✓';
+this.style.background = '#22c55e';
+emailInput.value = '';
+
+// Reset button after 3 seconds
+setTimeout(() => {
+this.textContent = form.classList.contains('cta-form') ? 'Reserve My Spot' : 'Join Waitlist';
+this.style.background = '';
+}, 3000);
+
+// Update waitlist counter (demo)
+updateWaitlistCounter();
+} else {
+emailInput.focus();
+emailInput.style.borderColor = '#ef4444';
+setTimeout(() => {
+emailInput.style.borderColor = '';
+}, 2000);
+}
+});
+});
+
+// Email validation
+function isValidEmail(email) {
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+return emailRegex.test(email);
+}
+
+// Update waitlist counter (demo function)
+function updateWaitlistCounter() {
+const counter = document.querySelector('.stat-number');
+if (counter) {
+let currentCount = parseInt(counter.textContent.replace(',', ''));
+currentCount += 1;
+counter.textContent = currentCount.toLocaleString();
+}
+}
+
 // Add hover effects to app cards
 document.querySelectorAll('.app-card').forEach(card => {
 card.addEventListener('mouseenter', function() {
@@ -684,6 +1050,62 @@ card.addEventListener('mouseleave', function() {
 this.style.transform = 'translateY(0) scale(1)';
 });
 });
+
+// Animate stats on scroll
+const observerOptions = {
+threshold: 0.5,
+rootMargin: '0px 0px -100px 0px'
+};
+
+const statsObserver = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+const statNumbers = entry.target.querySelectorAll('.stat-card h3');
+statNumbers.forEach(stat => animateNumber(stat));
+statsObserver.unobserve(entry.target);
+}
+});
+}, observerOptions);
+
+const statsGrid = document.querySelector('.stats-grid');
+if (statsGrid) {
+statsObserver.observe(statsGrid);
+}
+
+// Animate numbers
+function animateNumber(element) {
+const finalNumber = element.textContent;
+const isPercentage = finalNumber.includes('%');
+const isCurrency = finalNumber.includes(');
+const numericValue = parseInt(finalNumber.replace(/[^0-9]/g, ''));
+
+let currentNumber = 0;
+const increment = numericValue / 50;
+const timer = setInterval(() => {
+currentNumber += increment;
+if (currentNumber >= numericValue) {
+currentNumber = numericValue;
+clearInterval(timer);
+}
+
+let displayValue = Math.floor(currentNumber).toString();
+if (isCurrency) displayValue = ' + displayValue + 'B';
+else if (isPercentage) displayValue = displayValue + '%';
+
+element.textContent = displayValue;
+}, 20);
+}
+
+// Launch badge pulse animation enhancement
+const launchBadge = document.querySelector('.launch-badge');
+if (launchBadge) {
+setInterval(() => {
+launchBadge.style.transform = 'scale(1.05)';
+setTimeout(() => {
+launchBadge.style.transform = 'scale(1)';
+}, 200);
+}, 3000);
+}
 </script>
 </body>
 </html>
