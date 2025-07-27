@@ -1,0 +1,177 @@
+import Head from 'next/head'
+
+export default function Privacy() {
+return (
+<>
+<Head>
+<title>Privacy Policy | Cornerstone Health</title>
+<meta name="description" content="Cornerstone LLC Privacy Policy for Anchor, Ascend, and Built apps" />
+<meta name="robots" content="index, follow" />
+</Head>
+
+<div className="max-w-4xl mx-auto px-4 py-8">
+<h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
+
+<div className="prose prose-lg max-w-none">
+<p><strong>Effective Date:</strong> {new Date().toLocaleDateString()}</p>
+<p><strong>Last Updated:</strong> {new Date().toLocaleDateString()}</p>
+
+<h2>Introduction</h2>
+<p>Cornerstone LLC ("we," "our," or "us") operates mobile applications including Anchor, Ascend, and Built (collectively, "our Apps" or "Services"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile applications and related services.</p>
+
+Privacy Policy
+Effective Date: 07/27/2025
+Last Updated: 07/25/2025
+Introduction
+Cornerstone LLC ("we," "our," or "us") operates mobile applications including Anchor, Ascend, and Built (collectively, "our Apps" or "Services"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile applications and related services.
+Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access our applications.
+Information We Collect
+Personal Information You Provide
+We may collect personal information that you voluntarily provide when using our Apps, including:
+•	Account Information: Name, email address, username, password, date of birth, gender
+•	Profile Information: Health and wellness goals, preferences, biographical information
+•	Health & Wellness Data: Fitness activities, nutrition information, sleep patterns, mood tracking, habit completion, progress metrics
+•	User Content: Journal entries, photos, notes, comments, forum posts
+•	Communication Data: Messages sent through our Apps, customer support inquiries
+•	Payment Information: Billing address and payment method details (processed by third-party payment processors)
+Automatically Collected Information
+When you use our Apps, we may automatically collect:
+•	Device Information: Device type, operating system, unique device identifiers, mobile network information
+•	Usage Data: App features used, time spent in app, frequency of use, performance data
+•	Location Information: Approximate location based on IP address (precise location only with explicit permission)
+•	Analytics Data: App crashes, performance metrics, user interactions with app features
+Information from Third Parties
+We may receive information from:
+•	Social Media Platforms: If you connect your social media accounts
+•	Health Platforms: If you connect wearable devices or health apps (with your permission)
+•	Payment Processors: Transaction confirmation and billing information
+How We Use Your Information
+We use collected information for:
+Core App Functionality
+•	Providing and maintaining our Apps
+•	Creating and managing your account
+•	Tracking your progress and achievements
+•	Personalizing your experience and content
+•	Enabling social features and community interactions
+Communication
+•	Sending important updates about our Apps
+•	Responding to your inquiries and support requests
+•	Sending push notifications (with your permission)
+•	Providing relevant tips and wellness content
+Improvement and Analytics
+•	Analyzing app usage to improve features
+•	Conducting research to enhance user experience
+•	Developing new features and services
+•	Ensuring app security and preventing fraud
+Legal and Business Operations
+•	Complying with legal obligations
+•	Protecting our rights and preventing misuse
+•	Processing payments and managing subscriptions
+•	Facilitating business transfers or acquisitions
+Information Sharing and Disclosure
+We do not sell your personal information. We may share information in the following circumstances:
+Service Providers
+We work with trusted third-party service providers who assist us in:
+•	Cloud hosting and data storage
+•	Analytics and app performance monitoring
+•	Payment processing
+•	Customer support
+•	Marketing and communications
+Legal Requirements
+We may disclose information when required by law or to:
+•	Comply with legal process or government requests
+•	Protect our rights, property, or safety
+•	Prevent fraud or illegal activities
+•	Enforce our Terms of Service
+Business Transfers
+If we undergo a merger, acquisition, or sale of assets, user information may be transferred as part of the transaction.
+With Your Consent
+We may share information for other purposes with your explicit consent.
+Data Security
+We implement appropriate technical and organizational measures to protect your information, including:
+•	Encryption of data in transit and at rest
+•	Regular security assessments and updates
+•	Access controls and authentication measures
+•	Secure data centers and hosting infrastructure
+However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.
+Your Privacy Rights
+Depending on your location, you may have the following rights:
+Access and Control
+•	Access: Request a copy of your personal information
+•	Correction: Update or correct inaccurate information
+•	Deletion: Request deletion of your personal information
+•	Portability: Receive your data in a portable format
+•	Opt-out: Unsubscribe from marketing communications
+California Residents (CCPA)
+California residents have additional rights including:
+•	Right to know what personal information is collected
+•	Right to delete personal information
+•	Right to opt-out of sale of personal information
+•	Right to non-discrimination for exercising privacy rights
+European Residents (GDPR)
+EU residents have additional rights including:
+•	Right to object to processing
+•	Right to restrict processing
+•	Right to withdraw consent
+•	Right to lodge a complaint with supervisory authorities
+Exercising Your Rights
+To exercise these rights, contact us at [skyler@cornerstonehealth.co]. We will respond within the timeframes required by applicable law.
+Data Retention
+We retain your information for as long as necessary to:
+•	Provide our Services
+•	Comply with legal obligations
+•	Resolve disputes
+•	Enforce our agreements
+When you delete your account, we will delete or anonymize your personal information, except where retention is required by law.
+Children's Privacy
+Our Apps are not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If we become aware that we have collected information from a child under 13, we will take steps to delete such information.
+International Data Transfers
+Your information may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place for such transfers, including:
+•	Standard contractual clauses
+•	Adequacy decisions
+•	Other legally recognized transfer mechanisms
+Push Notifications
+We may send push notifications to keep you informed about:
+•	Achievement updates and progress
+•	Reminders for habits and goals
+•	New content and features
+•	Important account information
+You can disable push notifications through your device settings at any time.
+Analytics and Third-Party Services
+Our Apps may use third-party analytics services to help us understand app usage:
+•	Google Analytics: Usage patterns and demographic information
+•	Firebase: App performance and crash reporting
+•	Mixpanel: User engagement and feature usage
+These services may collect information sent by your device, including unique identifiers and usage data.
+Changes to This Privacy Policy
+We may update this Privacy Policy periodically. We will notify you of material changes by:
+•	Posting the updated policy in our Apps
+•	Sending email notifications
+•	Displaying prominent notices
+Your continued use of our Apps after changes indicates acceptance of the updated policy.
+Contact Information
+For questions about this Privacy Policy or our privacy practices, contact us at:
+Cornerstone LLC
+131 Continental Drive Suite 305
+Newark, DE 19713
+Email: privacy@cornerstonehealth.co
+Support: support@cornerstonehealth.co
+Cookie Policy
+Our Apps may use cookies and similar technologies to enhance functionality and user experience. You can manage cookie preferences through your device settings.
+Compliance
+This Privacy Policy complies with:
+•	California Consumer Privacy Act (CCPA)
+•	General Data Protection Regulation (GDPR)
+•	Children's Online Privacy Protection Act (COPPA)
+•	Health Insurance Portability and Accountability Act (HIPAA) where applicable
+•	Apple App Store and Google Play Store requirements
+________________________________________
+This Privacy Policy is designed to be comprehensive and compliant with major privacy regulations. However, we recommend having it reviewed by a legal professional before publication to ensure it meets all requirements specific to your business and jurisdictions.
+*/}
+{/* Copy from the privacy policy artifact, converting markdown to JSX */}
+
+</div>
+</div>
+</>
+)
+}
