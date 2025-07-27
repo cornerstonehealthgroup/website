@@ -11,3 +11,5 @@ This site is deployed automatically to Vercel from the main branch.
 - `/built` - Built app landing page
 - `/essence` - Essence app landing page
 - `/grace` - Grace app landing page
+- `/privacy.html` - Cornerstone LLC Privacy Policy
+- `/terms.html` - Cornerstone LLC Terms of Use
