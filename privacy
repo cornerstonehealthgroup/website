@@ -1,247 +1,555 @@
-import Head from 'next/head'
-
-export default function Privacy() {
-return (
-<>
-<Head>
-<title>Privacy Policy | Cornerstone Health</title>
-<meta name="description" content="Cornerstone LLC Privacy Policy for Anchor, Ascend, and Built apps" />
-<meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://cornerstonehealth.co/privacy" />
-</Head>
-
-<div className="max-w-4xl mx-auto px-4 py-8">
-<h1 className="text-4xl font-bold mb-8 text-gray-900">Privacy Policy</h1>
-
-<div className="prose prose-lg max-w-none text-gray-800 leading-relaxed">
-<p><strong>Effective Date:</strong> {new Date().toLocaleDateString()}</p>
-<p><strong>Last Updated:</strong> {new Date().toLocaleDateString()}</p>
-
-<h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-900">Introduction</h2>
-<p className="mb-4">
-Cornerstone LLC ("we," "our," or "us") operates mobile applications including Anchor, Ascend, and Built (collectively, "our Apps" or "Services"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile applications and related services.
-</p>
-<p className="mb-4">
-<strong>Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access our applications.</strong>
-</p>
-
-<h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-900">Information We Collect</h2>
-
-<h3 className="text-xl font-medium mt-6 mb-3 text-gray-800">Personal Information You Provide</h3>
-<p className="mb-4">We may collect personal information that you voluntarily provide when using our Apps, including:</p>
-<ul className="mb-4 ml-6">
-<li className="mb-2"><strong>Account Information:</strong> Name, email address, username, password, date of birth, gender</li>
-<li className="mb-2"><strong>Profile Information:</strong> Health and wellness goals, preferences, biographical information</li>
-<li className="mb-2"><strong>Health & Wellness Data:</strong> Fitness activities, nutrition information, sleep patterns, mood tracking, habit completion, progress metrics</li>
-<li className="mb-2"><strong>User Content:</strong> Journal entries, photos, notes, comments, forum posts</li>
-<li className="mb-2"><strong>Communication Data:</strong> Messages sent through our Apps, customer support inquiries</li>
-<li className="mb-2"><strong>Payment Information:</strong> Billing address and payment method details (processed by third-party payment processors)</li>
-</ul>
-
-<h3 className="text-xl font-medium mt-6 mb-3 text-gray-800">Automatically Collected Information</h3>
-<p className="mb-4">When you use our Apps, we may automatically collect:</p>
-<ul className="mb-4 ml-6">
-<li className="mb-2"><strong>Device Information:</strong> Device type, operating system, unique device identifiers, mobile network information</li>
-<li className="mb-2"><strong>Usage Data:</strong> App features used, time spent in app, frequency of use, performance data</li>
-<li className="mb-2"><strong>Location Information:</strong> Approximate location based on IP address (precise location only with explicit permission)</li>
-<li className="mb-2"><strong>Analytics Data:</strong> App crashes, performance metrics, user interactions with app features</li>
-</ul>
-
-<h3 className="text-xl font-medium mt-6 mb-3 text-gray-800">Information from Third Parties</h3>
-<p className="mb-4">We may receive information from:</p>
-<ul className="mb-4 ml-6">
-<li className="mb-2"><strong>Social Media Platforms:</strong> If you connect your social media accounts</li>
-<li className="mb-2"><strong>Health Platforms:</strong> If you connect wearable devices or health apps (with your permission)</li>
-<li className="mb-2"><strong>Payment Processors:</strong> Transaction confirmation and billing information</li>
-</ul>
-
-<h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-900">How We Use Your Information</h2>
-<p className="mb-4">We use collected information for:</p>
-
-<h3 className="text-xl font-medium mt-6 mb-3 text-gray-800">Core App Functionality</h3>
-<ul className="mb-4 ml-6">
-<li className="mb-2">Providing and maintaining our Apps</li>
-<li className="mb-2">Creating and managing your account</li>
-<li className="mb-2">Tracking your progress and achievements</li>
-<li className="mb-2">Personalizing your experience and content</li>
-<li className="mb-2">Enabling social features and community interactions</li>
-</ul>
-
-<h3 className="text-xl font-medium mt-6 mb-3 text-gray-800">Communication</h3>
-<ul className="mb-4 ml-6">
-<li className="mb-2">Sending important updates about our Apps</li>
-<li className="mb-2">Responding to your inquiries and support requests</li>
-<li className="mb-2">Sending push notifications (with your permission)</li>
-<li className="mb-2">Providing relevant tips and wellness content</li>
-</ul>
-
-<h3 className="text-xl font-medium mt-6 mb-3 text-gray-800">Improvement and Analytics</h3>
-<ul className="mb-4 ml-6">
-<li className="mb-2">Analyzing app usage to improve features</li>
-<li className="mb-2">Conducting research to enhance user experience</li>
-<li className="mb-2">Developing new features and services</li>
-<li className="mb-2">Ensuring app security and preventing fraud</li>
-</ul>
-
-<h3 className="text-xl font-medium mt-6 mb-3 text-gray-800">Legal and Business Operations</h3>
-<ul className="mb-4 ml-6">
-<li className="mb-2">Complying with legal obligations</li>
-<li className="mb-2">Protecting our rights and preventing misuse</li>
-<li className="mb-2">Processing payments and managing subscriptions</li>
-<li className="mb-2">Facilitating business transfers or acquisitions</li>
-</ul>
-
-<h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-900">Information Sharing and Disclosure</h2>
-<p className="mb-4">We do not sell your personal information. We may share information in the following circumstances:</p>
-
-<h3 className="text-xl font-medium mt-6 mb-3 text-gray-800">Service Providers</h3>
-<p className="mb-4">We work with trusted third-party service providers who assist us in:</p>
-<ul className="mb-4 ml-6">
-<li className="mb-2">Cloud hosting and data storage</li>
-<li className="mb-2">Analytics and app performance monitoring</li>
-<li className="mb-2">Payment processing</li>
-<li className="mb-2">Customer support</li>
-<li className="mb-2">Marketing and communications</li>
-</ul>
-
-<h3 className="text-xl font-medium mt-6 mb-3 text-gray-800">Legal Requirements</h3>
-<p className="mb-4">We may disclose information when required by law or to:</p>
-<ul className="mb-4 ml-6">
-<li className="mb-2">Comply with legal process or government requests</li>
-<li className="mb-2">Protect our rights, property, or safety</li>
-<li className="mb-2">Prevent fraud or illegal activities</li>
-<li className="mb-2">Enforce our Terms of Service</li>
-</ul>
-
-<h3 className="text-xl font-medium mt-6 mb-3 text-gray-800">Business Transfers</h3>
-<p className="mb-4">If we undergo a merger, acquisition, or sale of assets, user information may be transferred as part of the transaction.</p>
-
-<h3 className="text-xl font-medium mt-6 mb-3 text-gray-800">With Your Consent</h3>
-<p className="mb-4">We may share information for other purposes with your explicit consent.</p>
-
-<h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-900">Data Security</h2>
-<p className="mb-4">We implement appropriate technical and organizational measures to protect your information, including:</p>
-<ul className="mb-4 ml-6">
-<li className="mb-2">Encryption of data in transit and at rest</li>
-<li className="mb-2">Regular security assessments and updates</li>
-<li className="mb-2">Access controls and authentication measures</li>
-<li className="mb-2">Secure data centers and hosting infrastructure</li>
-</ul>
-<p className="mb-4">However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
-
-<h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-900">Your Privacy Rights</h2>
-<p className="mb-4">Depending on your location, you may have the following rights:</p>
-
-<h3 className="text-xl font-medium mt-6 mb-3 text-gray-800">Access and Control</h3>
-<ul className="mb-4 ml-6">
-<li className="mb-2"><strong>Access:</strong> Request a copy of your personal information</li>
-<li className="mb-2"><strong>Correction:</strong> Update or correct inaccurate information</li>
-<li className="mb-2"><strong>Deletion:</strong> Request deletion of your personal information</li>
-<li className="mb-2"><strong>Portability:</strong> Receive your data in a portable format</li>
-<li className="mb-2"><strong>Opt-out:</strong> Unsubscribe from marketing communications</li>
-</ul>
-
-<h3 className="text-xl font-medium mt-6 mb-3 text-gray-800">California Residents (CCPA)</h3>
-<p className="mb-4">California residents have additional rights including:</p>
-<ul className="mb-4 ml-6">
-<li className="mb-2">Right to know what personal information is collected</li>
-<li className="mb-2">Right to delete personal information</li>
-<li className="mb-2">Right to opt-out of sale of personal information</li>
-<li className="mb-2">Right to non-discrimination for exercising privacy rights</li>
-</ul>
-
-<h3 className="text-xl font-medium mt-6 mb-3 text-gray-800">European Residents (GDPR)</h3>
-<p className="mb-4">EU residents have additional rights including:</p>
-<ul className="mb-4 ml-6">
-<li className="mb-2">Right to object to processing</li>
-<li className="mb-2">Right to restrict processing</li>
-<li className="mb-2">Right to withdraw consent</li>
-<li className="mb-2">Right to lodge a complaint with supervisory authorities</li>
-</ul>
-
-<h3 className="text-xl font-medium mt-6 mb-3 text-gray-800">Exercising Your Rights</h3>
-<p className="mb-4">To exercise these rights, contact us at <a href="mailto:privacy@cornerstonehealth.co" className="text-blue-600 hover:text-blue-800 underline">privacy@cornerstonehealth.co</a>. We will respond within the timeframes required by applicable law.</p>
-
-<h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-900">Data Retention</h2>
-<p className="mb-4">We retain your information for as long as necessary to:</p>
-<ul className="mb-4 ml-6">
-<li className="mb-2">Provide our Services</li>
-<li className="mb-2">Comply with legal obligations</li>
-<li className="mb-2">Resolve disputes</li>
-<li className="mb-2">Enforce our agreements</li>
-</ul>
-<p className="mb-4">When you delete your account, we will delete or anonymize your personal information, except where retention is required by law.</p>
-
-<h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-900">Children's Privacy</h2>
-<p className="mb-4">Our Apps are not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If we become aware that we have collected information from a child under 13, we will take steps to delete such information.</p>
-
-<h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-900">International Data Transfers</h2>
-<p className="mb-4">Your information may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place for such transfers, including:</p>
-<ul className="mb-4 ml-6">
-<li className="mb-2">Standard contractual clauses</li>
-<li className="mb-2">Adequacy decisions</li>
-<li className="mb-2">Other legally recognized transfer mechanisms</li>
-</ul>
-
-<h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-900">Push Notifications</h2>
-<p className="mb-4">We may send push notifications to keep you informed about:</p>
-<ul className="mb-4 ml-6">
-<li className="mb-2">Achievement updates and progress</li>
-<li className="mb-2">Reminders for habits and goals</li>
-<li className="mb-2">New content and features</li>
-<li className="mb-2">Important account information</li>
-</ul>
-<p className="mb-4">You can disable push notifications through your device settings at any time.</p>
-
-<h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-900">Analytics and Third-Party Services</h2>
-<p className="mb-4">Our Apps may use third-party analytics services to help us understand app usage:</p>
-<ul className="mb-4 ml-6">
-<li className="mb-2"><strong>Google Analytics:</strong> Usage patterns and demographic information</li>
-<li className="mb-2"><strong>Firebase:</strong> App performance and crash reporting</li>
-<li className="mb-2"><strong>Mixpanel:</strong> User engagement and feature usage</li>
-</ul>
-<p className="mb-4">These services may collect information sent by your device, including unique identifiers and usage data.</p>
-
-<h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-900">Changes to This Privacy Policy</h2>
-<p className="mb-4">We may update this Privacy Policy periodically. We will notify you of material changes by:</p>
-<ul className="mb-4 ml-6">
-<li className="mb-2">Posting the updated policy in our Apps</li>
-<li className="mb-2">Sending email notifications</li>
-<li className="mb-2">Displaying prominent notices</li>
-</ul>
-<p className="mb-4">Your continued use of our Apps after changes indicates acceptance of the updated policy.</p>
-
-<h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-900">Contact Information</h2>
-<p className="mb-4">For questions about this Privacy Policy or our privacy practices, contact us at:</p>
-<div className="mb-4">
-<p className="mb-2"><strong>Cornerstone LLC</strong></p>
-<p className="mb-2">131 Continental Drive Suite 305</p>
-<p className="mb-2">Newark, DE 19713</p>
-</div>
-<p className="mb-4">
-Email: <a href="mailto:privacy@cornerstonehealth.co" className="text-blue-600 hover:text-blue-800 underline">privacy@cornerstonehealth.co</a><br />
-Support: <a href="mailto:support@cornerstonehealth.co" className="text-blue-600 hover:text-blue-800 underline">support@cornerstonehealth.co</a>
-</p>
-
-<h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-900">Cookie Policy</h2>
-<p className="mb-4">Our Apps may use cookies and similar technologies to enhance functionality and user experience. You can manage cookie preferences through your device settings.</p>
-
-<h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-900">Compliance</h2>
-<p className="mb-4">This Privacy Policy complies with:</p>
-<ul className="mb-4 ml-6">
-<li className="mb-2">California Consumer Privacy Act (CCPA)</li>
-<li className="mb-2">General Data Protection Regulation (GDPR)</li>
-<li className="mb-2">Children's Online Privacy Protection Act (COPPA)</li>
-<li className="mb-2">Health Insurance Portability and Accountability Act (HIPAA) where applicable</li>
-<li className="mb-2">Apple App Store and Google Play Store requirements</li>
-</ul>
-
-<hr className="my-8 border-gray-300" />
-<p className="text-sm text-gray-600 italic">
-Last Updated: {new Date().toLocaleDateString()}
-</p>
-</div>
-</div>
-</>
-)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service | Cornerstone Health</title>
+<meta name="description" content="Cornerstone LLC Terms of Service for Anchor, Ascend, and Built apps">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://cornerstonehealth.co/terms.html">
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
+
+body {
+font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+line-height: 1.6;
+color: #1a1a1a;
+background: #ffffff;
+padding-top: 100px;
+}
+
+.header {
+position: fixed;
+top: 0;
+width: 100%;
+background: rgba(255, 255, 255, 0.95);
+backdrop-filter: blur(20px);
+z-index: 1000;
+padding: 1rem 0;
+transition: all 0.3s ease;
+}
+
+.nav-container {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 2rem;
+}
+
+.logo {
+font-size: 1.8rem;
+font-weight: 700;
+color: #2563eb;
+text-decoration: none;
+}
+
+.nav-menu {
+display: flex;
+list-style: none;
+gap: 2rem;
+}
+
+.nav-menu a {
+text-decoration: none;
+color: #4b5563;
+font-weight: 500;
+transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+color: #2563eb;
+}
+
+.container {
+max-width: 800px;
+margin: 0 auto;
+padding: 2rem;
+}
+
+h1 {
+font-size: 2.5rem;
+font-weight: 700;
+color: #1f2937;
+margin-bottom: 2rem;
+text-align: center;
+}
+
+h2 {
+font-size: 1.5rem;
+font-weight: 600;
+color: #1f2937;
+margin: 2rem 0 1rem 0;
+border-bottom: 2px solid #e5e7eb;
+padding-bottom: 0.5rem;
+}
+
+h3 {
+font-size: 1.25rem;
+font-weight: 600;
+color: #374151;
+margin: 1.5rem 0 0.75rem 0;
+}
+
+h4 {
+font-size: 1.1rem;
+font-weight: 600;
+color: #4b5563;
+margin: 1rem 0 0.5rem 0;
+}
+
+p {
+margin-bottom: 1rem;
+color: #4b5563;
+}
+
+ul, ol {
+margin: 1rem 0;
+padding-left: 1.5rem;
+}
+
+li {
+margin-bottom: 0.5rem;
+color: #4b5563;
+}
+
+strong {
+color: #1f2937;
+font-weight: 600;
+}
+
+a {
+color: #2563eb;
+text-decoration: underline;
+}
+
+a:hover {
+color: #1d4ed8;
+}
+
+.effective-date {
+background: #f8fafc;
+border: 1px solid #e2e8f0;
+border-radius: 8px;
+padding: 1rem;
+margin-bottom: 2rem;
+text-align: center;
+}
+
+.contact-info {
+background: #f8fafc;
+border-radius: 8px;
+padding: 1.5rem;
+margin: 2rem 0;
+}
+
+.important-notice {
+background: #fef3c7;
+border: 1px solid #f59e0b;
+border-radius: 8px;
+padding: 1rem;
+margin: 1rem 0;
+}
+
+.footer-divider {
+border: none;
+height: 1px;
+background: #e5e7eb;
+margin: 2rem 0;
+}
+
+.footer-note {
+font-size: 0.875rem;
+color: #6b7280;
+font-style: italic;
+text-align: center;
+}
+
+@media (max-width: 768px) {
+.container {
+padding: 1rem;
+}
+
+h1 {
+font-size: 2rem;
+}
+
+h2 {
+font-size: 1.25rem;
+}
+
+.nav-menu {
+gap: 1rem;
+}
+}
+</style>
+</head>
+<body>
+<header class="header">
+<nav class="nav-container">
+<a href="/" class="logo">Cornerstone</a>
+<ul class="nav-menu">
+<li><a href="/">Home</a></li>
+<li><a href="/privacy.html">Privacy</a></li>
+<li><a href="/terms.html">Terms</a></li>
+<li><a href="mailto:support@cornerstonehealth.co">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<div class="container">
+<h1>Terms of Service</h1>
+
+<div class="effective-date">
+<p><strong>Effective Date:</strong> <span id="effective-date"></span></p>
+<p><strong>Last Updated:</strong> <span id="last-updated"></span></p>
+</div>
+
+<h2>Agreement to Terms</h2>
+<p>
+These Terms of Service ("Terms") constitute a legally binding agreement between you ("User," "you," or "your") and Cornerstone LLC ("Company," "we," "our," or "us") regarding your use of our mobile applications, including Anchor, Ascend, and Built (collectively, "Apps" or "Services").
+</p>
+<div class="important-notice">
+<p><strong>By downloading, accessing, or using our Apps, you agree to be bound by these Terms. If you do not agree to these Terms, do not use our Apps.</strong></p>
+</div>
+
+<h2>Description of Services</h2>
+
+<h3>Our Apps</h3>
+<p>Cornerstone LLC provides health and wellness mobile applications designed to help users:</p>
+<ul>
+<li><strong>Anchor:</strong> [App-specific description to be added]</li>
+<li><strong>Ascend:</strong> Holistic wellness optimization for ambitious individuals, featuring goal tracking, habit building, performance metrics, and personal development tools</li>
+<li><strong>Built:</strong> Mental toughness and discipline development platform with challenge systems, streak tracking, and community features</li>
+</ul>
+
+<h3>Core Features</h3>
+<p>Our Apps may include:</p>
+<ul>
+<li>Personal goal setting and tracking</li>
+<li>Habit formation and monitoring tools</li>
+<li>Health and wellness content library</li>
+<li>Community features and social interactions</li>
+<li>Progress tracking and analytics</li>
+<li>Achievement and reward systems</li>
+<li>Premium subscription features</li>
+</ul>
+
+<h2>User Accounts</h2>
+
+<h3>Account Creation</h3>
+<ul>
+<li>You must be at least 13 years old to create an account</li>
+<li>You must provide accurate and complete information</li>
+<li>You are responsible for maintaining account security</li>
+<li>You may not create multiple accounts or share account credentials</li>
+<li>One person or entity may not maintain more than one account</li>
+</ul>
+
+<h3>Account Responsibilities</h3>
+<p>You agree to:</p>
+<ul>
+<li>Keep your login credentials secure and confidential</li>
+<li>Notify us immediately of any unauthorized account access</li>
+<li>Update account information to keep it accurate and current</li>
+<li>Accept responsibility for all activities under your account</li>
+</ul>
+
+<h2>Acceptable Use</h2>
+
+<h3>Permitted Uses</h3>
+<p>You may use our Apps for personal, non-commercial purposes in accordance with these Terms.</p>
+
+<h3>Prohibited Activities</h3>
+<p>You agree NOT to:</p>
+
+<h4>Content Violations</h4>
+<ul>
+<li>Post harmful, offensive, or inappropriate content</li>
+<li>Share false, misleading, or inaccurate health information</li>
+<li>Upload content that violates others' intellectual property rights</li>
+<li>Post spam, advertisements, or promotional content</li>
+</ul>
+
+<h4>Technical Violations</h4>
+<ul>
+<li>Attempt to hack, reverse engineer, or exploit our Apps</li>
+<li>Use automated tools, bots, or scripts to access our Services</li>
+<li>Interfere with or disrupt our servers or networks</li>
+<li>Circumvent security measures or access restrictions</li>
+</ul>
+
+<h4>Community Violations</h4>
+<ul>
+<li>Harass, bully, or intimidate other users</li>
+<li>Impersonate others or misrepresent your identity</li>
+<li>Share other users' personal information without consent</li>
+<li>Engage in illegal activities or promote illegal conduct</li>
+</ul>
+
+<h4>Commercial Violations</h4>
+<ul>
+<li>Use our Apps for commercial purposes without authorization</li>
+<li>Resell, redistribute, or transfer your account</li>
+<li>Create derivative works based on our Apps</li>
+<li>Extract data for commercial use</li>
+</ul>
+
+<h2>Subscription Services</h2>
+
+<h3>Premium Features</h3>
+<p>We offer premium subscription plans that provide access to additional features and content.</p>
+
+<h3>Billing Terms</h3>
+<ul>
+<li>Subscriptions automatically renew unless cancelled</li>
+<li>Payment is charged to your selected payment method</li>
+<li>Prices are subject to change with notice</li>
+<li>No refunds for partial subscription periods</li>
+</ul>
+
+<h3>Cancellation</h3>
+<ul>
+<li>You may cancel your subscription at any time</li>
+<li>Cancellation takes effect at the end of your current billing period</li>
+<li>You retain access to premium features until the subscription expires</li>
+<li>Cancelled accounts revert to free tier functionality</li>
+</ul>
+
+<h3>Free Trials</h3>
+<ul>
+<li>Free trials may be offered for premium features</li>
+<li>Trial periods will be clearly disclosed before signup</li>
+<li>Trials automatically convert to paid subscriptions unless cancelled</li>
+<li>Credit card information may be required for trial activation</li>
+</ul>
+
+<h2>Content and Intellectual Property</h2>
+
+<h3>Our Content</h3>
+<p>All content provided through our Apps, including text, graphics, logos, images, software, and design, is owned by Cornerstone LLC or our licensors and protected by intellectual property laws.</p>
+
+<h3>User Content</h3>
+<ul>
+<li>You retain ownership of content you create or upload</li>
+<li>You grant us a license to use, display, and distribute your content within our Apps</li>
+<li>You represent that you have the right to share any content you upload</li>
+<li>We may remove content that violates these Terms</li>
+</ul>
+
+<h3>License to Use Our Apps</h3>
+<p>We grant you a limited, non-exclusive, non-transferable license to use our Apps for personal purposes, subject to these Terms.</p>
+
+<h2>Privacy and Data</h2>
+
+<h3>Data Collection</h3>
+<p>Our collection and use of personal information is governed by our <a href="/privacy.html">Privacy Policy</a>, which is incorporated into these Terms by reference.</p>
+
+<h3>Health Information Disclaimer</h3>
+<ul>
+<li>Our Apps are for informational and motivational purposes only</li>
+<li>Content does not constitute medical advice</li>
+<li>Consult healthcare professionals for medical decisions</li>
+<li>We are not liable for health-related decisions based on app usage</li>
+</ul>
+
+<h2>Disclaimers and Limitation of Liability</h2>
+
+<h3>Service Availability</h3>
+<ul>
+<li>Our Apps are provided "as is" and "as available"</li>
+<li>We do not guarantee uninterrupted or error-free service</li>
+<li>We may modify, suspend, or discontinue features at any time</li>
+<li>Scheduled maintenance may temporarily limit access</li>
+</ul>
+
+<h3>Health and Fitness Disclaimers</h3>
+<ul>
+<li>Consult a physician before beginning any fitness program</li>
+<li>Our Apps do not provide medical advice or diagnosis</li>
+<li>Use of fitness features is at your own risk</li>
+<li>We are not responsible for injuries resulting from app-guided activities</li>
+</ul>
+
+<h3>Limitation of Liability</h3>
+<div class="important-notice">
+<p><strong>TO THE MAXIMUM EXTENT PERMITTED BY LAW:</strong></p>
+<ul>
+<li><strong>CORNERSTONE LLC SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES</strong></li>
+<li><strong>OUR TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNT YOU PAID FOR SERVICES IN THE 12 MONTHS PRIOR TO THE CLAIM</strong></li>
+<li><strong>WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</strong></li>
+</ul>
+</div>
+
+<h3>Indemnification</h3>
+<p>You agree to indemnify and hold harmless Cornerstone LLC from any claims, damages, or expenses arising from:</p>
+<ul>
+<li>Your violation of these Terms</li>
+<li>Your use of our Apps</li>
+<li>Your content or activities</li>
+<li>Your violation of any third-party rights</li>
+</ul>
+
+<h2>Termination</h2>
+
+<h3>Termination by You</h3>
+<ul>
+<li>You may delete your account at any time through app settings</li>
+<li>Termination does not entitle you to refunds for paid services</li>
+<li>Some information may be retained as required by law</li>
+</ul>
+
+<h3>Termination by Us</h3>
+<p>We may suspend or terminate your account if you:</p>
+<ul>
+<li>Violate these Terms or our policies</li>
+<li>Engage in fraudulent or illegal activities</li>
+<li>Abuse our Services or other users</li>
+<li>Fail to pay subscription fees</li>
+</ul>
+
+<h3>Effect of Termination</h3>
+<p>Upon termination:</p>
+<ul>
+<li>Your right to use our Apps immediately ceases</li>
+<li>We may delete your account and associated data</li>
+<li>Provisions regarding liability and indemnification survive termination</li>
+</ul>
+
+<h2>Updates and Modifications</h2>
+
+<h3>App Updates</h3>
+<ul>
+<li>We may release updates to improve functionality and security</li>
+<li>Updates may change features or require acceptance of new terms</li>
+<li>Continued use after updates constitutes acceptance of changes</li>
+</ul>
+
+<h3>Terms Updates</h3>
+<ul>
+<li>We may modify these Terms at any time</li>
+<li>Material changes will be communicated through the Apps or email</li>
+<li>Continued use after changes constitutes acceptance of new Terms</li>
+</ul>
+
+<h2>Dispute Resolution</h2>
+
+<h3>Governing Law</h3>
+<p>These Terms are governed by the laws of the State of Delaware, without regard to conflict of law principles.</p>
+
+<h3>Arbitration Agreement</h3>
+<div class="important-notice">
+<p><strong>BY AGREEING TO THESE TERMS, YOU AGREE TO RESOLVE DISPUTES THROUGH BINDING ARBITRATION:</strong></p>
+</div>
+
+<h4>Arbitration Process</h4>
+<ul>
+<li>Disputes will be resolved through individual arbitration</li>
+<li>Arbitration will be conducted by the American Arbitration Association (AAA)</li>
+<li>Arbitration will take place in Delaware or your home state</li>
+<li>You waive the right to participate in class action lawsuits</li>
+</ul>
+
+<h4>Exceptions to Arbitration</h4>
+<p>The following disputes are NOT subject to arbitration:</p>
+<ul>
+<li>Intellectual property disputes</li>
+<li>Small claims court matters (under $10,000)</li>
+<li>Injunctive relief requests</li>
+</ul>
+
+<h3>30-Day Dispute Resolution Period</h3>
+<p>Before initiating arbitration, you must:</p>
+<ol>
+<li>Send written notice of the dispute to <a href="mailto:legal@cornerstonehealth.co">legal@cornerstonehealth.co</a></li>
+<li>Allow 30 days for good faith resolution attempts</li>
+<li>Include detailed description of the dispute and desired resolution</li>
+</ol>
+
+<h2>Miscellaneous Provisions</h2>
+
+<h3>Severability</h3>
+<p>If any provision of these Terms is found unenforceable, the remaining provisions continue in full force and effect.</p>
+
+<h3>Assignment</h3>
+<ul>
+<li>You may not assign these Terms or your account to others</li>
+<li>We may assign these Terms in connection with business transfers</li>
+</ul>
+
+<h3>Force Majeure</h3>
+<p>We are not liable for delays or failures due to circumstances beyond our reasonable control, including natural disasters, government actions, or technical failures.</p>
+
+<h3>Entire Agreement</h3>
+<p>These Terms, together with our <a href="/privacy.html">Privacy Policy</a>, constitute the entire agreement between you and Cornerstone LLC regarding your use of our Apps.</p>
+
+<div class="contact-info">
+<h3>Contact Information</h3>
+<p>For questions about these Terms, contact us at:</p>
+<p>
+<strong>Cornerstone LLC</strong><br>
+131 Continental Drive Suite 305<br>
+Newark, DE 19713
+</p>
+<p>
+Email: <a href="mailto:legal@cornerstonehealth.co">legal@cornerstonehealth.co</a><br>
+Support: <a href="mailto:support@cornerstonehealth.co">support@cornerstonehealth.co</a>
+</p>
+</div>
+
+<h2>App Store Specific Terms</h2>
+
+<h3>Apple App Store</h3>
+<p>If you downloaded our App from the Apple App Store, additional terms apply:</p>
+<ul>
+<li>Apple is not a party to these Terms</li>
+<li>Apple is not responsible for our App or any claims related to it</li>
+<li>You may only use our App on Apple-branded devices</li>
+<li>Apple's Terms of Service also apply to your use</li>
+</ul>
+
+<h3>Google Play Store</h3>
+<p>If you downloaded our App from Google Play, additional terms apply:</p>
+<ul>
+<li>Google is not a party to these Terms</li>
+<li>Google is not responsible for our App or any claims related to it</li>
+<li>Google's Terms of Service also apply to your use</li>
+</ul>
+
+<h2>Acknowledgment</h2>
+<div class="important-notice">
+<p><strong>BY USING OUR APPS, YOU ACKNOWLEDGE THAT:</strong></p>
+<ul>
+<li>You have read and understood these Terms</li>
+<li>You agree to be bound by these Terms</li>
+<li>You are at least 13 years old (or have parental consent)</li>
+<li>You will use our Apps in compliance with all applicable laws</li>
+</ul>
+</div>
+
+<hr class="footer-divider">
+<div class="footer-note">
+<p>Last Updated: <span id="footer-date"></span></p>
+<p><strong>Questions?</strong> Contact us at <a href="mailto:legal@cornerstonehealth.co">legal@cornerstonehealth.co</a></p>
+</div>
+</div>
+
+<script>
+// Set current date for effective date and last updated
+const currentDate = new Date().toLocaleDateString('en-US', {
+year: 'numeric',
+month: 'long',
+day: 'numeric'
+});
+
+document.getElementById('effective-date').textContent = currentDate;
+document.getElementById('last-updated').textContent = currentDate;
+document.getElementById('footer-date').textContent = currentDate;
+</script>
+</body>
+</html>
