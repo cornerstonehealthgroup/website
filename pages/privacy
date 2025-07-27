@@ -7,7 +7,7 @@ return (
 <title>Privacy Policy | Cornerstone Health</title>
 <meta name="description" content="Cornerstone LLC Privacy Policy for Anchor, Ascend, and Built apps" />
 <meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://cornerstonehealth.co/privacy" />
+<link rel="canonical" href="https://cornerstonehealth.co/pages/privacy" />
 </Head>
 
 <div className="max-w-4xl mx-auto px-4 py-8">
